@@ -38,20 +38,22 @@ decrement = () => {
   render() {
     return (
       <View style={styles.container}>
-      <View style={{ flex: 1, flexDirection: 'column',}}>
+      {/* <View style={{ flex: 1, flexDirection: 'column',}}>
 
       <View  style={{flex:1, justifyContent: "center", alignItems: "center" ,}} >
       <Text style={{ fontSize: 100, color: "#666", fontWeight: "800" }}>
             {this.props.count}
           </Text>
       </View  >
-      </View>
+
+
+      </View> */}
       <View style={{flexDirection: 'row',flex:1}}>
         <TouchableHighlight
           style={{flex:1, justifyContent: "center", alignItems: "center" ,}}
           onPress={this.increament}
         >
-          <Text style={{ fontSize: 100, color: "#666", fontWeight: "800" }}>
+          <Text style={{ fontSize: 150, color: "#666", fontWeight: "800" }}>
             +
           </Text>
         </TouchableHighlight>
@@ -61,7 +63,7 @@ decrement = () => {
          
           onPress={this.decrement}
         >
-          <Text style={{ fontSize: 100, color: "#666", fontWeight: "800" }}>
+          <Text style={{ fontSize: 150, color: "#666", fontWeight: "800" }}>
             -
           </Text>
         </TouchableHighlight>
