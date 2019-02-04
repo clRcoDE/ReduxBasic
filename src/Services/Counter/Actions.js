@@ -12,3 +12,20 @@
 //         type:'DECREMENT'
 //     }
 // }
+
+import {INCREMENT} from  './Type'
+import {DECREMENT} from './Type'
+
+
+ export const  setIncrement =()=>{
+    return{
+        type: INCREMENT
+    }
+}
+
+export const setDecrement=()=>{
+    return{
+        type:DECREMENT
+    }
+}
+

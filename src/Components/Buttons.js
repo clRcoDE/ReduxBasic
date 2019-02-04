@@ -4,7 +4,7 @@ import { Text, View, StyleSheet, TouchableHighlight } from "react-native";
 // import {actions} from '../Services/Counter/Actions'
 // import store  from  '../index'
 import {connect} from 'react-redux'
-
+import {setDecrement,setIncrement} from '../Services/Counter/Actions'
 
  class Buttons extends Component {
 
@@ -23,18 +23,11 @@ import {connect} from 'react-redux'
 
 
 increament = () => {
-  this.props.dispatch({
-      type:'INCREMENT'
-  })
+  this.props.dispatch(setIncrement())
 };
 
 decrement = () => {
-  this.props.dispatch({
-
-
-      type:'DECREMENT',
-
-  })
+  this.props.dispatch(setDecrement())
   
 }
 
