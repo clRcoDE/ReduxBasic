@@ -30,8 +30,12 @@ increament = () => {
 
 decrement = () => {
   this.props.dispatch({
+
+
       type:'DECREMENT',
+
   })
+  
 }
 
 
